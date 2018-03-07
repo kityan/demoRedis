@@ -64,7 +64,7 @@ function requestTaskId(){
 /**
  * Колбек запроса идентификатора задания
  */ 
-var requestTaskId_cb = function(err, data){
+function requestTaskId_cb(err, data){
 	if (err === null){
 		// запоминаем присвоенный процессу taskId
 		taskId = parseInt(data);
